@@ -9,14 +9,11 @@ Dockerized norminette (42School's code linter)
 ```
 cd ft_printf
 
-# Norm version 2
-docker run -v $PWD:/code alexandregv/norminette:v2
-
-# Norm version 3
-docker run -v $PWD:/code alexandregv/norminette:v3
+# Norm version 3.2.8
+docker run -v $PWD:/code tkomatsu/norminette:3.2.8
 
 # Pass arguments to norminette
-docker run -v $PWD:/code alexandregv/norminette:v2 -R CheckForbiddenSourceHeader main.c
+docker run -v $PWD:/code tkomatsu/norminette:3.2.8 -R CheckForbiddenSourceHeader main.c
 ```
 
 ### Windows (cmd.exe)
