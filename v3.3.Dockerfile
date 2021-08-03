@@ -7,7 +7,7 @@ RUN set -ex && apt-get update && apt-get -q install -y -V git && rm -rf /var/lib
 
 WORKDIR /usr/src/norminette
 
-RUN git clone --depth 1 https://github.com/42School/norminette -b 3.2.8 .
+RUN git clone --depth 1 https://github.com/42School/norminette -b 3.3.2 .
 RUN pip3 install -r requirements.txt
 RUN python3 setup.py install
 
